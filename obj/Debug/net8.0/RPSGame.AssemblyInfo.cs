@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPSGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42e936b7050b4a9ca53467c68762bbd43c077e75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+086f672aa85c338b9ccfaeb7700985e66ba337a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPSGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPSGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

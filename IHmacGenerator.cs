@@ -13,14 +13,14 @@ class Sha256HmacGenerator : IHmacGenerator
 {
 
     public string GenerateKey()
+{
+    var key = new byte[Constants.HmacKeyLength];
+    using (var rng = RandomNumberGenerator.Create())
     {
-        var key = new byte[32];
-        using (var rng = RandomNumberGenerator.Create())
-        {
-            rng.GetBytes(key);
-        }
-        return BitConverter.ToString(key).Replace("-", "").ToLower();
+        rng.GetBytes(key);
     }
+    return BitConverter.ToString(key).Replace("-", "").ToLower();
+}
 
     public string ComputeHmac(string key, string message)
     {
