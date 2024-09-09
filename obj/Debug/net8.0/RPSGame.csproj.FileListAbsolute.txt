@@ -15,3 +15,4 @@
 /home/artem/code/Dotnet/RPSGame/bin/Debug/net8.0/Spectre.Console.dll
 /home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.csproj.AssemblyReference.cache
 /home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.csproj.Up2Date
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.sourcelink.json
