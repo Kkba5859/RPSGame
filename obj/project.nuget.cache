@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "f60vj9aOLd8=",
+  "success": true,
+  "projectFilePath": "/home/artem/code/Dotnet/RPSGame/RPSGame.csproj",
+  "expectedPackageFiles": [
+    "/home/artem/.nuget/packages/spectre.console/0.49.1/spectre.console.0.49.1.nupkg.sha512"
+  ],
+  "logs": []
+}

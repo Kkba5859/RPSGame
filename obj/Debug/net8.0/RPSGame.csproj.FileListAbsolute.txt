@@ -1,0 +1,17 @@
+/home/artem/code/Dotnet/RPSGame/bin/Debug/net8.0/RPSGame
+/home/artem/code/Dotnet/RPSGame/bin/Debug/net8.0/RPSGame.deps.json
+/home/artem/code/Dotnet/RPSGame/bin/Debug/net8.0/RPSGame.runtimeconfig.json
+/home/artem/code/Dotnet/RPSGame/bin/Debug/net8.0/RPSGame.dll
+/home/artem/code/Dotnet/RPSGame/bin/Debug/net8.0/RPSGame.pdb
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.GeneratedMSBuildEditorConfig.editorconfig
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.AssemblyInfoInputs.cache
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.AssemblyInfo.cs
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.csproj.CoreCompileInputs.cache
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.dll
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/refint/RPSGame.dll
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.pdb
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.genruntimeconfig.cache
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/ref/RPSGame.dll
+/home/artem/code/Dotnet/RPSGame/bin/Debug/net8.0/Spectre.Console.dll
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.csproj.AssemblyReference.cache
+/home/artem/code/Dotnet/RPSGame/obj/Debug/net8.0/RPSGame.csproj.Up2Date
