@@ -2,17 +2,19 @@ using System.Security.Cryptography;
 using System.Text;
 using RPSGame;
 
-// Interface for generating HMAC
 interface IHmacGenerator
 {
     string GenerateKey();
     string ComputeHmac(string key, string message);
 }
 
-// Class for generating HMAC using SHA256
 class Sha256HmacGenerator : IHmacGenerator
 {
 
+    // Generates a cryptographically secure key for HMAC operations.
+    // 
+    // Returns:
+    //     A hexadecimal string representation of the generated key.
     public string GenerateKey()
 {
     var key = new byte[Constants.HmacKeyLength];
@@ -23,6 +25,12 @@ class Sha256HmacGenerator : IHmacGenerator
     return BitConverter.ToString(key).Replace("-", "").ToLower();
 }
 
+        /// <summary>
+        /// Computes the HMAC hash of the given message using the provided key.
+        /// </summary>
+        /// <param name="key">The key used for HMAC computation.</param>
+        /// <param name="message">The message to be hashed.</param>
+        /// <returns>The hexadecimal string representation of the computed HMAC hash.</returns>
     public string ComputeHmac(string key, string message)
     {
         var keyBytes = Enumerable.Range(0, key.Length / 2)

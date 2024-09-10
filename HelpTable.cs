@@ -13,12 +13,22 @@ class GameHelpTable : IHelpTable
     private readonly IGameRules _rules;
     private const int PageSize = 10; 
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="GameHelpTable"/> class.
+    /// </summary>
+    /// <param name="moves">An array of strings representing the game moves.</param>
+    /// <param name="rules">An instance of the <see cref="IGameRules"/> interface representing the game rules.</param>
     public GameHelpTable(string[] moves, IGameRules rules)
     {
         _moves = moves;
         _rules = rules;
     }
 
+    /// <summary>
+    /// Displays a help table for the game, showing the possible moves and their outcomes.
+    /// The table is paginated, with each page showing a subset of the moves.
+    /// The user can navigate through the pages using the 'n' (next), 'p' (previous), and 'e' (exit) commands.
+    /// </summary>
     public void Display()
     {
         int n = _moves.Length;

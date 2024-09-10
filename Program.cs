@@ -5,6 +5,13 @@
     private readonly IHmacGenerator _hmacGenerator;
     private readonly IHelpTable _helpTable;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Game"/> class.
+        /// </summary>
+        /// <param name="moves">An array of strings representing the game moves.</param>
+        /// <param name="rules">An instance of the <see cref="IGameRules"/> interface representing the game rules.</param>
+        /// <param name="hmacGenerator">An instance of the <see cref="IHmacGenerator"/> interface representing the HMAC generator.</param>
+        /// <param name="helpTable">An instance of the <see cref="IHelpTable"/> interface representing the help table.</param>
     public Game(string[] moves, IGameRules rules, IHmacGenerator hmacGenerator, IHelpTable helpTable)
     {
         _moves = moves;
@@ -13,6 +20,9 @@
         _helpTable = helpTable;
     }
 
+    // Starts the game by generating a HMAC key, making a computer move, and 
+    // displaying the HMAC. Then, it enters a loop where it continuously prompts 
+    // the user for input until a valid move is made or the game is exited.
     public void Start()
     {
         string key = _hmacGenerator.GenerateKey();
@@ -59,6 +69,9 @@
         }
     }
 
+    /// <summary>
+    /// Displays the game menu to the user, showing available moves and options to exit or view help.
+    /// </summary>
     private void DisplayMenu()
     {
         Console.WriteLine("Available moves:");
@@ -71,6 +84,10 @@
         Console.Write("Enter your move: ");
     }
 
+    // The main entry point of the Rock Paper Scissors game application.
+    // It takes an array of string arguments representing the game moves.
+    // The function initializes the game rules, HMAC generator, and help table based on the input arguments.
+    // It then starts the game using the initialized game object.
     static void Main(string[] args)
     {
         if (args.Length < 3 || args.Length % 2 == 0 || args.Distinct().Count() != args.Length)
