@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
+using RPSGame;
 
 // Interface for generating HMAC
 interface IHmacGenerator
@@ -27,10 +28,8 @@ class Sha256HmacGenerator : IHmacGenerator
         var keyBytes = Enumerable.Range(0, key.Length / 2)
             .Select(x => Convert.ToByte(key.Substring(x * 2, 2), 16))
             .ToArray();
-        using (var hmac = new HMACSHA256(keyBytes))
-        {
-            byte[] hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(message));
-            return BitConverter.ToString(hash).Replace("-", "").ToLower();
-        }
+        using var hmac = new HMACSHA256(keyBytes);
+        byte[] hash = hmac.ComputeHash(Encoding.UTF8.GetBytes(message));
+        return BitConverter.ToString(hash).Replace("-", "").ToLower();
     }
 }
